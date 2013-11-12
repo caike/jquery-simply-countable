@@ -34,7 +34,7 @@
     return $(this).each(function(){
 
       var countable = $(this);
-      var counter = $(options.counter);
+      var counter = countable.siblings(options.counter);
       if (!counter.length) { return false; }
       
       var countCheck = function(){
